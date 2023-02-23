@@ -1,0 +1,17 @@
+<a [routerLink]="['/level-0', { outlets: { primary: null, outlet1: null } }]">L0</a> |
+<a [routerLink]="['/level-0', { outlets: { primary: 'level-1', outlet1: null } }]">L1</a> |
+<!-- <a [routerLink]="['/level-0', { outlets: { primary: 'level-1', outlet1: 'aux-1' } }]">L1-A1</a> |
+<a [routerLink]="['/level-0', { outlets: { primary: 'level-1', outlet1: 'aux-2' } }]">L1-A2</a> | -->
+<a [routerLink]="['/level-0', 'level-1', { outlets: { outlet1: 'aux-1' } }]">L1-A1</a> |
+<a [routerLink]="['/level-0', 'level-1', { outlets: { outlet1: 'aux-2' } }]">L1-A2</a> |
+<a [routerLink]="['/level-0/level-1/level-2']">L2</a> |
+<!-- <a [routerLink]="['/level-0', { outlets: { primary: ['level-1', { outlets: { primary: ['level-2', { outlets: { primary: ['level-3'], outlet2: 'aux-3' } }] } }], outlet1: 'aux-1' } }]">L1-A1/L2/L3-A3</a> * |
+<a [routerLink]="['/level-0', { outlets: { primary: ['level-1', { outlets: { primary: ['level-2', { outlets: { primary: ['level-3'], outlet2: 'aux-4' } }] } }], outlet1: 'aux-1' } }]">L1-A1/L2/L3-A4</a> * | -->
+
+<a [routerLink]="['/level-0/level-1/level-2/level-3']">L3</a>
+
+<br/>
+
+<!-- <a [routerLink]="['/level-0/level-1/level-2/level-3']">MINI</a> -->
+
+<router-outlet></router-outlet>
